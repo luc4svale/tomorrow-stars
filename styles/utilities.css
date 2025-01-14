@@ -1,0 +1,32 @@
+.container {
+  --max-width: 47.9375rem;
+  --padding-inline: 1.5rem; 
+
+  max-width: var(--max-width);
+  padding-inline: var(--padding-inline);
+  margin-inline: auto;
+}
+
+
+/* display*/
+.d-flex {
+  display: flex;
+}
+
+.d-grid {
+  display: grid;
+}
+
+@media (width >= 48rem) {
+  .container {
+    --max-width: 63.9375rem;
+    --padding-inline: 2.5rem;
+  }
+}
+
+@media (width >= 64rem) {
+  .container {
+    --max-width: 80rem;
+    --padding-inline: 3.75rem;
+  }
+}
