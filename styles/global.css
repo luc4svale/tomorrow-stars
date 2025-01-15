@@ -48,6 +48,7 @@
   --fw--bold: 700;
 
   /* font sizes */
+  --fs-3xl: 2.5rem;
   --fs-2xl: 2rem;
   --fs-xl: 1.5rem;
   --fs-lg: 1.25rem;
@@ -65,6 +66,9 @@ body {
   font: var(--fw-regular) var(--fs-md)/var(--lh-150) var(--ff-poppins);
   color: var(--text-secondary);
   letter-spacing: 0;
+  grid-template-areas: 
+    "aside-container"
+    "main-container";
 }
 
 h1, h2, h3 {
@@ -83,4 +87,14 @@ ul[role="list"] {
 
 img {
   max-width: 100%;
+}
+
+@media (width >= 64rem) and (orientation: landscape) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "main-container aside-container";
+  }
 }
