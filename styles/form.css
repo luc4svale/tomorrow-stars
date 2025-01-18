@@ -1,0 +1,15 @@
+form {
+  & fieldset {
+    border: none;
+
+    & legend {
+      margin-bottom: 1.5rem;
+    }
+
+    & label {
+      display: block;
+      margin-bottom: 0.25rem;
+      font: var(--fw-regular) var(--fs-sm)/var(--lh-140) var(--ff-poppins);
+    }
+  }
+}

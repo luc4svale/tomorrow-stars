@@ -60,15 +60,18 @@
   --lh-125: 125%;
   --lh-140: 140%;
   --lh-150: 150%;
+
+  /* font properties */
+  --font-md: var(--fw-regular) var(--fs-md)/var(--lh-150) var(--ff-poppins);
 }
 
 body {
-  font: var(--fw-regular) var(--fs-md)/var(--lh-150) var(--ff-poppins);
+  font: var(--font-md);
   color: var(--text-secondary);
   letter-spacing: 0;
   grid-template-areas: 
-    "aside-container"
-    "main-container";
+    "aside-background"
+    "main-background";
 }
 
 h1, h2, h3 {
@@ -79,6 +82,10 @@ h1, h2, h3 {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+strong {
+  font: inherit;
 }
 
 ul[role="list"] {
@@ -93,8 +100,8 @@ img {
   body {
     height: 100vh;
     overflow: hidden;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.0512820513fr 1fr;
     grid-template-areas: 
-      "main-container aside-container";
+      "main-background aside-background";
   }
 }

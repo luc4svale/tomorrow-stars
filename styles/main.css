@@ -1,0 +1,17 @@
+#main-background main {
+  & header {
+    margin-bottom: 3rem;
+
+    & h1 {
+      margin-block: 1.5rem 0.5rem;
+    }
+  }
+}
+
+@media (width > 64rem) and (orientation: landscape) {
+  #main-background main {
+    overflow-y: scroll;
+    max-height: 100vh;
+    margin-inline: auto 0;
+  }
+}

@@ -1,24 +1,25 @@
-#aside-container {
-  grid-area: aside-container;
-  padding-block: 1.5rem;
+#aside-background {
+  grid-area: aside-background;
 
   & aside {
-    gap: 0.75rem;
-    place-content: start;
     justify-items: center;
 
     & header {
+      margin-bottom: 2rem;
       justify-items: center;
       text-align: center;
       max-width: 31rem;
+
+      & h2 {
+        margin-block: 0.5rem;
+      }
     }
 
   }
 }
 
 @media (width >= 48rem) {
-  #aside-container {
-    padding-block: 2.5rem;
+  #aside-background {
 
     & aside {
       gap: 1.5rem;
@@ -27,8 +28,9 @@
 }
 
 @media (width >= 64rem) and (orientation: landscape) {
-  #aside-container {
+  #aside-background {
     & aside {
+      overflow: hidden;
       gap: 2rem;
       margin-inline: 0 auto;
 
@@ -42,7 +44,7 @@
 
 /* For small desktops */
 @media (64rem <= width <= 75rem ) and (orientation: landscape) {
-  #aside-container {
+  #aside-background {
     & aside header h2 {
       font-size: var(--fs-2xl);
     }

@@ -1,0 +1,49 @@
+.droparea {
+  & .dropzone {
+    position: relative;
+    outline: 1px dashed var(--stroke-default);
+    border-radius: 0.5rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: #A8A29E;
+
+
+    & input[type="file"] {
+      all: unset;
+      opacity: 0;
+      position: absolute;
+      inset: 0;
+    }
+
+    & .upload-icon {
+      display: block;
+      margin-bottom: 0.5rem;
+      width: 3rem;
+      height: 3rem;
+      background: url("../../assets/icons/cloud-upload.svg");
+      margin-inline: auto;
+    }
+
+    & span {
+      display: block;
+      max-width: 20.5rem;
+      height: 3rem;
+      margin: auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      align-content: center;
+    }
+
+    &:hover,
+    &:focus-within {
+      outline-width: 0.125rem;
+      outline-color: var(--stroke-highlight);
+      background-color: var(--surface-secondary);
+      color: var(--text-tertiary);
+
+      & .upload-icon {
+        background-image: url("../../assets/icons/cloud-upload-hover.svg");
+      }
+    }
+  }
+}

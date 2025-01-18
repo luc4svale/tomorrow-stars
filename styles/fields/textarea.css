@@ -1,0 +1,7 @@
+& textarea {
+  display: block;
+
+  &::-webkit-resizer {
+    background: url("../../assets/icons/resize-handler.svg") no-repeat calc(100% - 0.25rem) calc(100% - 0.25rem);
+  }
+}

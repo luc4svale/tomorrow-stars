@@ -1,0 +1,31 @@
+input, 
+select, 
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  outline: 1px solid var(--stroke-default);
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font: var(--font-md);
+  background-color: var(--surface-primary);
+  color: var(--text-primary);
+
+  &:focus,
+  &:focus-within {
+    outline-width: 0.25rem;
+    outline-color: var(--surface-secondary);
+    outline-offset: 0.1px;
+    border-color: var(--stroke-highlight)
+  }
+}
+
+
+ input,
+ textarea {
+  &::placeholder {
+    color: var(--text-tertiary);
+  }
+ }
+

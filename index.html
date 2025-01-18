@@ -13,9 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="d-grid">
-  <div id="aside-container" class="surface-secondary d-grid">
-    <aside class="d-grid container surface-secondary">
-      <header class="d-grid gap-0.5">
+  <div id="aside-background" class="d-grid surface-secondary">
+    <aside class="container">
+      <header>
         <img id="logo-img" src="./assets/logo.svg" alt="Logo Estrelas do Amanhã">
         <h2 class="md-block text-primary fw-semibold fs-3xl lh-125">
           Porque cada momento de <strong class="text-highlight">aprendizado</strong> conta
@@ -29,10 +29,65 @@
     </aside>
   </div>
 
-  <div id="main-container" class="surface-primary d-grid">
-    <main></main>
+  <div id="main-background" class="d-grid surface-primary">
+    <main class="container">
+      <header>
+        <a href="#" class="d-flex items-center gap-0.5">
+          <img src="./assets/icons/arrow-left.svg" alt="Seta de voltar">
+          <span>Voltar</span>
+        </a>
+        <h1 class="text-primary fw-semibold fs-xl lh-125">Formulário de matrícula</h1>
+        <p>
+          Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
+        </p>
+      </header>
+
+      <form action="" class="d-flex flex-col gap-3">
+        <fieldset id="child-info" class="d-flex flex-col gap-1.5">
+          <legend class="text-primary fw-semibold lh-125">Informações da criança</legend>
+
+          <div class="input-wrapper">
+            <label for="child-fullname">Nome completo</label>
+            <input type="text"  name="child-fullname" id="child-fullname" placeholder="Qual o nome da criança?">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="birth">Data de nascimento</label>
+            <input type="date" name="birth" id="birth" lang="pt-BR">
+          </div>
+
+          <div class="select-wrapper">
+            <label for="gender">Sexo</label>
+            <select name="gender" id="gender" required>
+              <option value="" selected disabled>Selecione</option>
+              <option value="male">Masculino</option>
+              <option value="female">Feminino</option>
+              <option value="na">Prefiro não responder</option>
+            </select>
+          </div>
+
+          <div class="textarea-wrapper">
+            <label for="medical-obs">Informações médicas</label>
+            <textarea 
+              name="medical-obs" id="medical-obs" rows="5"
+              placeholder="A criança possui alguma restrição que a escola deva estar ciente? Se sim, especifique"
+            ></textarea>
+          </div>
+
+          <div class="droparea">
+            <label for="birth-file">Certidão de nascimento</label>
+            <div class="dropzone">
+              <input type="file" name="birth-file" id="birth-file">
+              <i class="upload-icon"></i>
+              <span>Clique para <br> selecionar arquivos</span>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </main>
   </div>
 
 
+  <script src="./scripts/index.js"></script>
 </body>
 </html>

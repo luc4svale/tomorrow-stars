@@ -1,11 +1,14 @@
 .container {
   --max-width: 47.9375rem;
-  --padding-inline: 1.5rem; 
+  --padding-inline: 1.5rem;
+  --padding-block: 1.5rem; 
 
   max-width: var(--max-width);
   padding-inline: var(--padding-inline);
+  padding-block: var(--padding-block);
   margin-inline: auto;
 }
+
 
 
 /* display */
@@ -17,9 +20,27 @@
   display: grid;
 }
 
+
+
+/* brakepoint display */
 .md-block {
   display: none;
 }
+
+
+
+/* direction */
+.flex-col {
+  flex-direction: column;
+}
+
+
+
+/* alignment */
+.items-center {
+  align-items: center;
+}
+
 
 
 /* surface color color*/
@@ -34,6 +55,7 @@
 .surface-disabled {
   background-color: var(--surface-disabled);
 }
+
 
 
 /* text color  */
@@ -54,6 +76,7 @@
 }
 
 
+
 /* font weight */
 .fw-regular {
   font-weight: var(--fw-regular);
@@ -70,6 +93,7 @@
 .fw-bold {
   font-weight: var(--fw-bold);
 }
+
 
 
 /* font size */
@@ -96,6 +120,8 @@
 .fs-sm {            
   font-size: var(--fs-sm);    
 }
+
+
 
 /* line height */
 .lh-120 {
@@ -131,11 +157,16 @@
   gap: 2rem;
 }
 
+.gap-3 {
+  gap: 3rem;
+}
+
 
 @media (width >= 48rem) {
   .container {
     --max-width: 63.9375rem;
     --padding-inline: 2.5rem;
+    --padding-block: 2.5rem;
   }
 
   .md-block {
@@ -145,7 +176,7 @@
 
 @media (width >= 64rem) and (orientation: landscape) {
   .container {
-    --max-width: 80rem;
+    --max-width: 41rem;
     --padding-inline: 4rem;
   }
 }
