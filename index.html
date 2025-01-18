@@ -83,6 +83,39 @@
             </div>
           </div>
         </fieldset>
+
+        <fieldset id="address-info" class="d-flex flex-col gap-1.5">
+          <legend>Endereço residencial</legend>
+
+          <div class="input-wrapper">
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep" placeholder="00000-000">
+          </div>
+
+          <div class="d-flex flex-col flex-md-row gap-1.5 col-gap-1.25">
+            <div class="input-wrapper w-md-65">
+              <label for="street">Rua</label>
+              <input type="text" name="street" id="street" placeholder="Rua das flores" disabled>
+            </div>
+            <div class="input-wrapper w-md-35">
+              <label for="number">Número</label>
+              <input type="text" name="number" id="number" placeholder="123">
+            </div>
+          </div>
+
+          <div class="d-flex flex-col flex-md-row gap-1.5 col-gap-1.25">
+            <div class="input-wrapper w-md-65">
+              <label for="city">Cidade</label>
+              <input type="text" name="city" id="city" placeholder="São Paulo" disabled>
+            </div>
+
+            <div class="input-wrapper w-md-35">
+              <label for="state">Estado</label> 
+              <input type="text" name="state" id="state" placeholder="SP" disabled>
+            </div>
+          </div>
+
+        </fieldset>
       </form>
     </main>
   </div>

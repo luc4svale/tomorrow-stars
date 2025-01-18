@@ -161,6 +161,10 @@
   gap: 3rem;
 }
 
+.col-gap-1\.25 {
+  column-gap: 1.25rem;
+}
+
 
 @media (width >= 48rem) {
   .container {
@@ -171,6 +175,18 @@
 
   .md-block {
     display: block;
+  }
+
+  .flex-md-row {
+    flex-direction: row;
+  }
+
+  .w-md-65 {
+    width: 65%;
+  }
+
+  .w-md-35 {
+    width: 35%;
   }
 }
 

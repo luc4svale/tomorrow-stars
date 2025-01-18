@@ -11,5 +11,13 @@ form {
       margin-bottom: 0.25rem;
       font: var(--fw-regular) var(--fs-sm)/var(--lh-140) var(--ff-poppins);
     }
+
+    .input-wrapper:has(input[disabled]) {
+        opacity: 0.5;
+
+        & input {
+          background-color: var(--surface-disabled);
+        }
+    }
   }
 }
