@@ -2,7 +2,7 @@ form {
   & fieldset {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
     border: none;
 
     & legend {
@@ -13,7 +13,7 @@ form {
     }
 
     & label,
-    & .label {
+    & group-label {
       display: block;
       margin-bottom: 0.25rem;
       font: var(--fw-regular) var(--fs-sm)/var(--lh-140) var(--ff-poppins);
@@ -41,6 +41,14 @@ form {
           }
         }
       }
+    }
+  }
+}
+
+@media (width >= 48rem) {
+  form {
+    & fieldset {
+      gap: 1.5rem;
     }
   }
 }

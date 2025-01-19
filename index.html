@@ -92,7 +92,7 @@
             <input type="text" name="cep" id="cep" placeholder="00000-000">
           </div>
 
-          <div class="d-flex flex-col flex-md-row gap-1.5 col-gap-1.25">
+          <div class="d-flex flex-col flex-md-row gap-1.25 row-md-gap-1.5">
             <div class="input-wrapper w-md-65">
               <label for="street">Rua</label>
               <input type="text" name="street" id="street" placeholder="Rua das flores" disabled>
@@ -103,7 +103,7 @@
             </div>
           </div>
 
-          <div class="d-flex flex-col flex-md-row gap-1.5 col-gap-1.25">
+          <div class="d-flex flex-col flex-md-row gap-1.25 row-md-gap-1.5">
             <div class="input-wrapper w-md-65">
               <label for="city">Cidade</label>
               <input type="text" name="city" id="city" placeholder="São Paulo" disabled>
@@ -140,6 +140,71 @@
             </small>
           </div>
         </fieldset>
+
+        <fieldset id="enrollment-options">
+          <legend>Opções de matrícula</legend>
+
+          <div class="input-wrapper">
+            <group-label>Selecione o turno de estudo</group-label>
+            <div class="radio-wrapper">
+              <div class="radio-inner">
+                <input type="radio" name="study-shift" id="morning" value="morning">
+                <img src="./assets/icons/sun-cloud.svg" alt="Ícone do sol parcialmente atrás de uma nuvem">
+                <label for="morning">Manhã</label>
+              </div>
+
+              <div class="radio-inner">
+                <input type="radio" name="study-shift" id="afternoon" value="afternoon">
+                <img src="./assets/icons/sun.svg" alt="Ícone do sol parcialmente atrás de uma nuvem">
+                <label for="afternoon">Tarde</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-wrapper">
+            <group-label>
+              Em qual esporte você gostaria de inscrever seu filho?
+            </group-label>
+            <div class="radio-wrapper">
+              <div class="radio-inner">
+                <input type="radio" name="sport" id="football" value="football">
+                <img src="./assets/icons/football.svg" alt="Ícone de bola de futebol">
+                <label for="football">Futebol</label>
+              </div>
+
+              <div class="radio-inner">
+                <input type="radio" name="sport" id="basketball" value="basketball">
+                <img src="./assets/icons/basketball.svg" alt="Ícone de bola de basquete">
+                <label for="basketball">Basquete</label>
+              </div>
+
+              <div class="radio-inner">
+                <input type="radio" name="sport" id="swimming" value="swimming">
+                <img src="./assets/icons/swimming.svg" alt="Ícone de natação">
+                <label for="swimming">Natação</label>
+              </div>
+
+              <div class="radio-inner">
+                <input type="radio" name="sport" id="yoga" value="yoga">
+                <img src="./assets/icons/yoga.svg" alt="Ícone de yoga (meditação)">
+                <label for="yoga">Yoga</label>
+              </div>
+
+              <div class="radio-inner">
+                <input type="radio" name="sport" id="volleyball" value="volleyball">
+                <img src="./assets/icons/volleyball.svg" alt="Ícone de bola de vôlei">
+                <label for="volleyball">Vôlei</label>
+              </div>
+
+              <div class="radio-inner">
+                <input type="radio" name="sport" id="boxing" value="boxing">
+                <img src="./assets/icons/boxing.svg" alt="Ícone de luva de box">
+                <label for="boxing">Boxe</label>
+              </div>
+
+        </fieldset>
+
+
       </form>
     </main>
   </div>
