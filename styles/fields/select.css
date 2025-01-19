@@ -2,7 +2,7 @@ select {
   background-color: var(--surface-primary);
   background: url("../../assets/icons/arrow-down.svg") no-repeat calc(100% - 1rem) center / 1.5rem;
 
-  &.open {
+  &:focus {
     background: url("../../assets/icons/arrow-up.svg") no-repeat calc(100% - 1rem) center / 1.5rem;
   }
 

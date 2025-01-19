@@ -1,11 +1,3 @@
-//Selects
-const selects = document.querySelectorAll('select');
-selects.forEach(select => {
-  select.addEventListener('click', () => {
-    select.classList.toggle('open');
-  });
-});
-
 //Dropzones
 const dropzones = document.querySelectorAll('.dropzone');
 dropzones.forEach(dropzone => {
