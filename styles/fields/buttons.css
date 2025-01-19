@@ -1,0 +1,25 @@
+.actions-wrapper {
+  padding-top: 1rem;
+  justify-content: flex-end;
+
+  & button {
+    all: unset;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    font-weight: var(--fw-medium);
+    text-align: center;
+
+    &.light {
+      background-color: var(--surface-primary);
+      border-color: var(--text-highlight);
+      color: var(--text-highlight)
+    }
+
+    &.highlight {
+      background-color: var(--brand-dark);
+      border-color: var(--brand-dark);
+      color: var(--surface-primary);
+    }
+  }
+}
