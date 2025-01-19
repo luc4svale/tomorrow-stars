@@ -1,6 +1,6 @@
 .radio-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(9.25rem, 1fr));
   gap: 1rem;
 
   & .radio-inner {
@@ -47,6 +47,12 @@
         background: url("../../assets/icons/circle-checked.svg") no-repeat center;
       }
     }
+  }
+}
+
+@media (width >= 48rem) {
+  .radio-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   }
 }
 
