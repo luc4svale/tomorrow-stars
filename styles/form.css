@@ -1,23 +1,46 @@
 form {
   & fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     border: none;
 
     & legend {
       margin-bottom: 1.5rem;
+      color: var(--text-primary);
+      font-weight: var(--fw-semibold);
+      line-height: var(--lh-125);
     }
 
-    & label {
+    & label,
+    & .label {
       display: block;
       margin-bottom: 0.25rem;
       font: var(--fw-regular) var(--fs-sm)/var(--lh-140) var(--ff-poppins);
     }
 
-    .input-wrapper:has(input[disabled]) {
-        opacity: 0.5;
+    & small {
+      display: flex;
+      margin-top: 0.25rem;
+      font: var(--fw-regular) var(--fs-sm)/var(--lh-140) var(--ff-poppins);
+      color: #78716C;
 
-        & input {
-          background-color: var(--surface-disabled);
+      &.error {
+        display: none;
+        align-items: center;
+        gap: 0.25rem;
+        color: var(--semantic-error);
+
+        & i {
+          display: inline-block;
+          width: 1.25rem;
+          height: 1.25rem;
+
+          &.alert-cicle {  
+            background: url("../assets/icons/alert-circle.svg") no-repeat center;
+          }
         }
+      }
     }
   }
 }

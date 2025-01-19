@@ -1,5 +1,5 @@
-input, 
-select, 
+input,
+select,
 textarea {
   appearance: none;
   -webkit-appearance: none;
@@ -22,10 +22,32 @@ textarea {
 }
 
 
- input,
- textarea {
+input,
+textarea {
   &::placeholder {
     color: var(--text-tertiary);
   }
- }
+}
 
+
+/* Disabled and invalid */
+.input-wrapper {
+  &:has(disabled) {
+    opacity: 0.5;
+
+    & input {
+      background-color: var(--surface-disabled);
+    }
+  }
+
+  &:has(:invalid):not(:has(:focus-within)) {
+    & input {
+      outline-width: 0.125rem;;
+      outline-color: var(--semantic-error);
+
+      & + small.error {
+        display: flex;
+      }
+    }
+  }
+}

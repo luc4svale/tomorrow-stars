@@ -43,8 +43,8 @@
       </header>
 
       <form action="" class="d-flex flex-col gap-3">
-        <fieldset id="child-info" class="d-flex flex-col gap-1.5">
-          <legend class="text-primary fw-semibold lh-125">Informações da criança</legend>
+        <fieldset id="child-info">
+          <legend>Informações da criança</legend>
 
           <div class="input-wrapper">
             <label for="child-fullname">Nome completo</label>
@@ -84,7 +84,7 @@
           </div>
         </fieldset>
 
-        <fieldset id="address-info" class="d-flex flex-col gap-1.5">
+        <fieldset id="address-info" >
           <legend>Endereço residencial</legend>
 
           <div class="input-wrapper">
@@ -115,6 +115,30 @@
             </div>
           </div>
 
+        </fieldset>
+
+        <fieldset id="guardian-info">
+          <legend>Informações do responsável</legend>
+
+          <div class="input-wrapper">
+            <label for="guardian-fullname">Nome completo</label>
+            <input type="text" name="guardian-fullname" id="guardian-fullname">
+            <small>Principal responsável legal e contato de emergência</small>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="guardian-phone">Telefone</label>
+            <input type="tel" name="guardian-phone" id="guardian-phone" placeholder="(10) 9 8765-4321">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="guardian-email">E-mail</label>
+            <input type="email" name="guardian-email" id="guardian-email" placeholder="example@email.com" required>
+            <small class="error">
+              <i class="alert-cicle"></i> 
+              <span>Insira um e-mail válido</span>
+            </small>
+          </div>
         </fieldset>
       </form>
     </main>
